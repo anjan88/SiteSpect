@@ -1,4 +1,5 @@
-def time_in_words(s):
+while True:
+ def time_in_words(s):
     d = {"00": " O'clock", "15": "Quarter", "30": " thiry","45":"Quarter of", "1": "one", "2": " two", "3": " three", "4": " four",
          " 5": " five",
          "6": " six", "7": " seven", "8": " eight", "9": " nine", "10": " ten", "11": "eleven", "12": "twelve ",
@@ -49,5 +50,7 @@ def time_in_words(s):
             mstring = d[str(m)]
     return "{0}{1}{2}{3}".format(mstring, minute_string, filler_string, d[hour])
 
-print(time_in_words(input("Enter the time you want in hr:min format here: ")))
-
+ print(time_in_words(input("Enter the time you want in hr:min format here: ")))
+ opt= (input("enter 'N' to stop: "))
+ if opt=="N":
+  break
