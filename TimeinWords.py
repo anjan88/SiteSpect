@@ -49,14 +49,5 @@ def time_in_words(s):
             mstring = d[str(m)]
     return "{0}{1}{2}{3}".format(mstring, minute_string, filler_string, d[hour])
 
+print(time_in_words(input("Enter the time you want in hr:min format here: ")))
 
-print(time_in_words("1:00"))
-print(time_in_words("1:15"))
-print(time_in_words("1:30"))
-print(time_in_words("1:45"))
-print(time_in_words("1:01"))
-print(time_in_words("1:12"))
-print(time_in_words("1:48"))
-print(time_in_words("12:59"))
-print(time_in_words("12:29"))
-print(time_in_words("12:45"))

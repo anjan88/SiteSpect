@@ -15,8 +15,5 @@ def bracket_matching(s):
     return True
 
 
-print(bracket_matching('[{}]()'))
-print(bracket_matching('()'))
-print(bracket_matching('[[]{}()]'))
-print(bracket_matching('['))
-print(bracket_matching(']['))
+print(bracket_matching(input("enter the brackets:")))
+
