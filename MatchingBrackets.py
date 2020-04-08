@@ -1,5 +1,5 @@
-while True:
- def bracket_matching(s):
+
+def bracket_matching(s):
     d = {']': '[', ')': '(', '}': '{'}
     stack = []
     while (s):
@@ -14,10 +14,21 @@ while True:
     if stack:
         return ("pair not matching")
     return ("matching pairs")
- print(bracket_matching(input("enter the brackets as many pairs as you want:")))
- opt= (input("enter 'N' to stop: "))
- if opt=="N":
-  break
+
+# creating a new file and writing into a file
+file_name='sitespect.txt'
+brackets=['[{}]()','()','[[]{}()]','[','][']
+with open(file_name,'a')as f:
+     for bracket in brackets:
+         f.write(bracket)
+         f.write('\n')
+
+# reading from the txt file
+with open(file_name,'r') as f:
+     lines = f.readlines()
+     for line in lines:
+         line=line.strip()
+         print(line,bracket_matching(line))
 
 
 
